@@ -1,0 +1,249 @@
+body {
+ font-family: sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+ color: #333;
+}
+
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+}
+
+header {
+ background-color: #e7e7e7;
+ padding: 20px 0;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.menu-icon {
+ font-size: 2em;
+ color: #333;
+ cursor: pointer;
+ 
+}
+
+.logo {
+ font-size: 1.8em;
+ font-weight: bold;
+ color: #007bff;
+
+}
+
+.logo-accent {
+ color: #ffa500;
+}
+
+.user-icon img {
+  width: 30px;   /* ajuste para o tamanho desejado */
+  height: 30px;  /* ajuste para o tamanho desejado */
+  object-fit: contain;
+  display: block;
+}
+
+.hero {
+ width: 100%;
+}
+
+.hero-image {
+ background-image: url('https://t3.ftcdn.net/jpg/05/89/94/76/360_F_589947606_DIb9PKz1Gih2iT6GknD8IGuDKP1mo2zc.jpg'); /* Replace with your image path */
+ background-size: cover;
+ background-position: center;
+ height: 400px; /* Adjust as needed */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ text-align: center;
+}
+
+.hero-content {
+ /* Styles for content overlayed on the image if needed */
+}
+
+.primary-button {
+ background-color: #00bfff; /* Light blue */
+ color: #fff;
+ font-size: 1.2em;
+ padding: 15px 30px;
+ border: none;
+ border-radius: 30px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.primary-button:hover { 
+ background-color: #001aff;
+}
+
+.popular-destinations {
+ padding: 40px 0;
+ background-color: #f9f9f9;
+ text-align: left;
+}
+
+.popular-destinations h2 {
+ font-size: 2.2em;
+ color: #000000;
+ margin-bottom:2px;
+ 
+}
+
+.popular-destinations-subtitle {
+ color: #000000;
+ margin-bottom: 30px;
+font-size: 20px;
+margin-top: 0;
+}
+
+.destinations-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os cards */
+    gap: 30px; /* Espaço entre os cards */
+}
+
+.destination-card {
+    background-color: #f0f0f0; /* Fundo cinza claro como na imagem */
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: left;
+    width: 480px; /* Largura aumentada para o novo layout */
+    display: flex; /* ATIVA O FLEXBOX */
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    gap: 15px; /* Espaço entre a imagem e o bloco de texto */
+}
+
+.destination-card img {
+    width: 200px; /* Largura fixa para a imagem */
+    height: 200px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 15px; /* Bordas arredondadas na imagem */
+    border: 3px solid #0d87ff; /* Borda azul na imagem */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna (título, texto, botão) */
+    justify-content: space-between; /* Empurra o botão para o final */
+    height: 200px; /* Altura igual à da imagem para alinhamento */
+}
+
+.card-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    flex-grow: 1; /* Permite que o parágrafo ocupe o espaço disponível */
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.secondary-button {
+    background-color: #0d87ff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ocupa toda a largura do container de texto */
+}
+
+.secondary-button:hover {
+    background-color: #0073e6;
+}
+
+.carousel-arrow {
+    font-size: 32px;
+    color: #0d87ff;
+    cursor: pointer;
+}
+
+.social-media {
+ padding: 40px 0;
+ text-align: center;
+ background-color: #fff;
+}
+
+.social-media h2 {
+ font-size: 2.2em;
+ color: #000000;
+ margin-bottom: 2px;
+ text-align: left;
+padding-left: 20px;
+}
+
+.social-media-subtitle {
+ color: #000000;
+ margin-bottom: 30px;
+  text-align: left;
+padding-left: 20px;
+margin-top: 0px;
+}
+
+.social-links {
+ display: flex;
+ justify-content: center;
+ gap: 40px;
+ padding: 20px 0;
+}
+
+.social-item a {
+ display: flex;
+ align-items: center;
+ text-decoration: none;
+ color: #000000;
+}
+
+.social-item img {
+ width: 50px;
+ height: 50px;
+ margin-right: 15px;
+ border-radius: 5px;
+}
+
+.social-text h3 {
+ font-size: 1.2em;
+ margin-bottom: 5px;
+ color: #000000;
+}
+
+.social-text p {
+ font-size: 0.9em;
+ color: #000000;
+ margin-top: 0;
+}
+
+footer {
+ background-color: #333;
+ color: #fff;
+ text-align: center;
+ padding: 10px 0;
+ font-size: 0.8em;
+}
