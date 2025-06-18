@@ -1,134 +1,139 @@
+
+
 body {
- font-family: sans-serif;
- margin: 0;
- padding: 0;
- background-color: #f4f4f4;
- color: #333;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
- max-width: 1200px;
- margin: 0 auto;
- padding: 0 20px;
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
- background-color: #e7e7e7;
- padding: 20px 0;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #e7e7e7;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header-content {
- display: flex;
- justify-content: space-between;
- align-items: center;
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ margin-left: 5px;
+ margin-right: 5px;
 }
-.left-header {
+
+.cabecalho-esquerda {
   display: flex;
   align-items: center;
-  gap: 15px; 
-}
+  gap: 15px; /* Espaço entre menu e logo */
+  padding-left: 0px;
+  padding-right: 0px;
+     }
+  
 
-.menu-icon {
- font-size: 2em;
- color: #333;
- cursor: pointer;
- 
+.icone-menu {
+    font-size: 2em;
+    color: #000000;
+    cursor: pointer;
 }
 
 .logo {
- font-size: 1.8em;
- font-weight: bold;
- color: #007bff;
-
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #007bff;
 }
 
-.logo-accent {
- color: #ffa500;
+.logo-destaque {
+    color: #ffa500;
 }
 
-.user-icon img {
-  width: 30px;   /* ajuste para o tamanho desejado */
-  height: 30px;  /* ajuste para o tamanho desejado */
-  object-fit: contain;
-  display: block;
+.icone-usuario img {
+    width: 30px;      
+    height: 30px;     
+    object-fit: contain;
+    display: block;
 }
 
-.hero {
- width: 100%;
+.secao-destaque {
+    width: 100%;
 }
 
-.hero-image {
- background-image: url('https://t3.ftcdn.net/jpg/05/89/94/76/360_F_589947606_DIb9PKz1Gih2iT6GknD8IGuDKP1mo2zc.jpg'); /* Replace with your image path */
- background-size: cover;
- background-position: center;
- height: 400px; /* Adjust as needed */
- display: flex;
- justify-content: center;
- align-items: center;
- color: #fff;
- text-align: center;
+.imagem-destaque {
+    background-image: url('https://t3.ftcdn.net/jpg/05/89/94/76/360_F_589947606_DIb9PKz1Gih2iT6GknD8IGuDKP1mo2zc.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
 }
 
-.hero-content {
- /* Styles for content overlayed on the image if needed */
+.conteudo-destaque {
+    /* Estilos para o conteúdo sobreposto na imagem, se necessário */
 }
 
-.primary-button {
- background-color: #00bfff; /* Light blue */
- color: #fff;
- font-size: 1.2em;
- padding: 15px 30px;
- border: none;
- border-radius: 30px;
- cursor: pointer;
- transition: background-color 0.3s ease;
+.botao-primario {
+    background-color: #00bfff; /* Azul claro */
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.primary-button:hover { 
- background-color: #001aff;
+.botao-primario:hover { 
+    background-color: #001aff;
 }
 
-
-.content-section {
+.secao-conteudo {
     padding: 40px 0;
 }
 
-.section-container {
+.conteiner-secao {
     display: flex;
     align-items: flex-start;
     gap: 20px;
 }
 
-.main-content {
+.conteudo-principal {
     flex-grow: 1;
 }
 
-.section-header {
+.cabecalho-secao {
     text-align: left;
     margin-bottom: 30px;
 }
 
-.section-header h2 {
+.cabecalho-secao h2 {
     font-size: 32px;
     margin: 0 0 5px 0;
-    color: #333;
+    color: #000000;
 }
 
-.section-header p {
+.cabecalho-secao p {
     font-size: 16px;
-    color: #777;
+    color: #000000;
     margin: 0;
 }
 
-/* --- GRADE DE CARDS (NOVO) --- */
-.cards-grid {
+/* --- GRADE DE CARDS --- */
+.grade-cartoes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
-.info-card {
+.cartao-info {
     background-color: #f0f0f0;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -139,48 +144,47 @@ header {
     transition: transform 0.2s;
 }
 
-.info-card:hover {
+.cartao-info:hover {
     transform: translateY(-5px);
 }
 
-.info-card img {
+.cartao-info img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 15px;
 }
 
-.card-content {
+.conteudo-cartao {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 150px;
 }
 
-.card-content h3 {
+.conteudo-cartao h3 {
     font-size: 18px;
     margin: 0 0 5px 0;
 }
 
-.card-content p {
+.conteudo-cartao p {
     font-size: 14px;
     line-height: 1.4;
-    color: #666;
+    color: #000000;
     margin: 0;
     flex-grow: 1;
 }
 
-.rating {
+.avaliacao {
     color: #ffc107;
     font-size: 16px;
     margin: 8px 0;
 }
 
-.secondary-button {
+.botao-secundario {
     background-color: #0d87ff;
     color: #fff;
     font-size: 14px;
-    font-weight: bold;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -190,71 +194,69 @@ header {
     text-transform: uppercase;
 }
 
-.secondary-button:hover {
-    background-color: #0073e6;
+.botao-secundario:hover {
+    background-color: #1100ff;
 }
 
-.side-arrows {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 100px; /* Alinha com os cards */
-}
-
-.arrow {
-    font-size: 24px;
-    color: #0d87ff;
-    cursor: pointer;
-}
-
-/* --- FOOTER / SEÇÃO SOCIAL (ATUALIZADO) --- */
+/* --- FOOTER / SEÇÃO SOCIAL --- */
 footer {
     padding: 40px 0;
     background-color: #f9f9f9;
 }
 
-.social-section {
+.secao-redes-sociais {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.social-title {
-    text-align: center;
+.titulo-social h2 span {
+    /* Mantém as propriedades de fonte do H2 */
+    font-weight: inherit;
+    font-size: inherit;
 }
 
-.social-title h2 {
-    font-size: 32px;
-    margin: 0 0 5px 0;
-    color: #333;
+.titulo-social h2 span:nth-of-type(1) {
+    color: #f84f59; /* Vermelho/Rosa */
 }
 
-.social-title p {
-    color: #777;
+.titulo-social h2 span:nth-of-type(2) {
+    color: #f7932e; /* Laranja */
+}
+
+.titulo-social h2 span:nth-of-type(3) {
+    color: #dcb03a; /* Amarelo/Dourado */
+}
+
+.titulo-social h2 span:nth-of-type(4) {
+    color: #a449df; /* Roxo */
+}
+
+.titulo-social p {
+    color: #000000;
     margin: 0;
 }
 
-.social-item a {
+.item-social a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: #000000;
 }
 
-.social-item img {
+.item-social img {
     width: 60px;
     height: 60px;
     margin-right: 15px;
 }
 
-.social-text h3 {
+.texto-social h3 {
     font-size: 18px;
     margin: 0 0 2px 0;
 }
 
-.social-text p {
+.texto-social p {
     font-size: 14px;
-    color: #777;
+    color: #000000;
     margin: 0;
 }
