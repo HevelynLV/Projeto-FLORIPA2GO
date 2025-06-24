@@ -9,9 +9,10 @@ body {
 }
 
 .conteiner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -25,7 +26,6 @@ header {
   justify-content: space-between;
   align-items: center;
  margin-left: 5px;
- margin-right: 5px;
 }
 
 .cabecalho-esquerda {
@@ -33,7 +33,6 @@ header {
   align-items: center;
   gap: 15px; /* Espaço entre menu e logo */
   padding-left: 0px;
-  padding-right: 0px;
      }
   
 
@@ -41,6 +40,7 @@ header {
     font-size: 2em;
     color: #000000;
     cursor: pointer;
+    padding-left: 40px;
 }
 
 .logo {
@@ -58,6 +58,7 @@ header {
     height: 30px;     
     object-fit: contain;
     display: block;
+    padding-right: 40px;
 }
 
 .secao-destaque {
@@ -65,7 +66,7 @@ header {
 }
 
 .imagem-destaque {
-    background-image: url('https://t3.ftcdn.net/jpg/05/89/94/76/360_F_589947606_DIb9PKz1Gih2iT6GknD8IGuDKP1mo2zc.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('https://cdn.pixabay.com/photo/2017/04/28/00/53/beach-2267102_1280.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
     height: 400px; 
@@ -96,13 +97,17 @@ header {
 }
 
 .secao-conteudo {
-    padding: 40px 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .conteiner-secao {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    
 }
 
 .conteudo-principal {
@@ -242,6 +247,7 @@ footer {
     align-items: center;
     text-decoration: none;
     color: #000000;
+    padding-left: 40px;
 }
 
 .item-social img {
@@ -259,4 +265,5 @@ footer {
     font-size: 14px;
     color: #000000;
     margin: 0;
+    padding-right: 40px;
 }
