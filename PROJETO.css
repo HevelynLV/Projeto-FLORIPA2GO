@@ -31,7 +31,7 @@ header {
 .cabecalho-esquerda {
   display: flex;
   align-items: center;
-  gap: 15px; /* Espaço entre menu e logo */
+  gap: 15px; /* espaço entre menu e logo */
   padding-left: 0px;
      }
   
@@ -78,11 +78,11 @@ header {
 }
 
 .conteudo-destaque {
-    /* Estilos para o conteúdo sobreposto na imagem, se necessário */
+    
 }
 
 .botao-primario {
-    background-color: #00bfff; /* Azul claro */
+    background-color: #00bfff; 
     color: #fff;
     font-size: 1.2em;
     padding: 15px 30px;
@@ -131,7 +131,7 @@ header {
     margin: 0;
 }
 
-/* --- GRADE DE CARDS --- */
+/* --- GRADE CARDS --- */
 .grade-cartoes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -203,7 +203,7 @@ header {
     background-color: #1100ff;
 }
 
-/* --- FOOTER / SEÇÃO SOCIAL --- */
+/* --- FOOTER / REDE SOCIAL --- */
 footer {
     padding: 40px 0;
     background-color: #f9f9f9;
@@ -216,25 +216,24 @@ footer {
 }
 
 .titulo-social h2 span {
-    /* Mantém as propriedades de fonte do H2 */
     font-weight: inherit;
     font-size: inherit;
 }
 
 .titulo-social h2 span:nth-of-type(1) {
-    color: #f84f59; /* Vermelho/Rosa */
+    color: #f84f59; 
 }
 
 .titulo-social h2 span:nth-of-type(2) {
-    color: #f7932e; /* Laranja */
+    color: #f7932e;
 }
 
 .titulo-social h2 span:nth-of-type(3) {
-    color: #dcb03a; /* Amarelo/Dourado */
+    color: #dcb03a; 
 }
 
 .titulo-social h2 span:nth-of-type(4) {
-    color: #a449df; /* Roxo */
+    color: #a449df; 
 }
 
 .titulo-social p {
